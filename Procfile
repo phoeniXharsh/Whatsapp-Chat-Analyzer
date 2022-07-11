@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app.py
+web: sh setup.sh && streamlit run "_📊_WhatsApp Chat Analyzer.py"
