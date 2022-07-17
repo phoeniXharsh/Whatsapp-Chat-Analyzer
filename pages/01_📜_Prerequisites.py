@@ -11,8 +11,9 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Prerequisties")
 
-st.subheader("1. The time format of your smartphone should be in 12h format")
-st.subheader("2. You need to have the exported chat data which you want to analyze. To export and download the chat data, follow the following steps")
+st.subheader("1. The time format of your smartphone must be in 12h format. You can verify/change it in your phone's 'Date & Time' settings.")
+st.subheader("2. The language of your smartphone must be English (USA). You can find it in the 'Languages & Input' tab in your phone's 'System' settings.")
+st.subheader("3. You need to have the exported chat data which you want to analyze. To export and download the chat data, just follow the steps below:")
 
 st.header(" ")
 
