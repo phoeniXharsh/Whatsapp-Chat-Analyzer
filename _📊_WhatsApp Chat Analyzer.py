@@ -16,7 +16,7 @@ hide_streamlit_style = """
             footer {visibility: hidden;}
             footer:after {
                 visibility: visible;
-                content: "Made with ❤️ by Harsh";
+                content: "Made with ♥ by Harsh";
                 display: block;
                 padding: 5px;
             }
