@@ -3,17 +3,27 @@ import preprocessor, helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib
+from PIL import Image
 
-st.set_page_config(layout="wide")
+## Page configuration and customization
+img = Image.open("whatsapp_image2.png")
+st.set_page_config(page_title='Chat Analyzer', page_icon = img, layout = 'wide')
 
-## Hide Footer and Hamburger Menu
+## Hide Footer and Hamburger Menu 
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            footer:after {
+                visibility: visible;
+                content: "Made with ❤️ by Harsh";
+                display: block;
+                padding: 5px;
+            }
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 ## Intro page
 
