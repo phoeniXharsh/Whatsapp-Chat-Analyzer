@@ -1,9 +1,4 @@
 import streamlit as st
-#from PIL import Image
-
-# Page configuration and customization
-#img = Image.open("whatsapp_image2.png")
-#st.set_page_config(page_title='Chat Analyzer', page_icon = img, layout = 'wide')
 
 ## Hide Footer and Hamburger Menu
 hide_streamlit_style = """
