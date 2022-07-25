@@ -16,7 +16,7 @@ hide_streamlit_style = """
             footer {visibility: hidden;}
             footer:after {
                 visibility: visible;
-                content: "Made with ♥ by Harsh";
+                content: "Made with ❤️ by Harsh";
                 display: block;
                 padding: 5px;
             }
@@ -189,18 +189,6 @@ if uploaded_file is not None:
         plt.xticks(rotation = 'vertical')
         st.pyplot(fig)
 
-#        # emoji analysis
-#        st.title("Emoji Analysis")
-#        emoji_df = helper.emojis_helper(selected_user, df)
-#
-#        col1, col2 = st.columns(2)
-#        with col1:
-#            st.dataframe(emoji_df) 
-#        with col2:
-#            fig, ax = plt.subplots()
-#            ax.pie(emoji_df['frequency'].head(), labels = emoji_df['emoji'].head(), autopct="%0.2f")
-#            st.pyplot(fig)
-
         # deleted messages
         st.title("Deleted Messages Analysis")
         deleted_df = helper.message_deleted(selected_user, df)
@@ -210,6 +198,19 @@ if uploaded_file is not None:
 
         plt.xticks(rotation = 'vertical')
         st.pyplot(fig)
+
+        # emoji analysis
+        st.title("Emoji Analysis")
+        st.markdown("Coming Soon...")
+#        emoji_df = helper.emojis_helper(selected_user, df)
+#
+#        col1, col2 = st.columns(2)
+#        with col1:
+#            st.dataframe(emoji_df) 
+#        with col2:
+#            fig, ax = plt.subplots()
+#            ax.pie(emoji_df['frequency'].head(), labels = emoji_df['emoji'].head(), autopct="%0.2f")
+#            st.pyplot(fig)
 
 
         
