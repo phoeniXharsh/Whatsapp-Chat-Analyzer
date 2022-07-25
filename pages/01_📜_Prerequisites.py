@@ -1,24 +1,4 @@
 import streamlit as st
-from PIL import Image
-
-## Page configuration and customization
-img = Image.open("whatsapp_image2.png")
-st.set_page_config(page_title='Chat Analyzer', page_icon = img, layout = 'wide')
-
-## Hide Footer and Hamburger Menu 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            footer:after {
-                visibility: visible;
-                content: "Made with ❤️ by Harsh";
-                display: block;
-                padding: 5px;
-            }
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Prerequisties")
 

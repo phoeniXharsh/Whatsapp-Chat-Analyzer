@@ -3,42 +3,6 @@ import preprocessor, helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib
-from PIL import Image
-
-## Page configuration and customization
-img = Image.open("whatsapp_image2.png")
-st.set_page_config(page_title='Chat Analyzer', page_icon = img, layout = 'wide')
-
-## Hide Footer and Hamburger Menu 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            footer:after {
-                visibility: visible;
-                content: "Made with ❤️ by Harsh";
-                display: block;
-                padding: 5px;
-            }
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-
-## Intro page
-
-st.subheader("Welcome to Whatsapp Chat Analyzer!")
-expander1 = st.expander("What this app can do?")
-expander1.write("""
-        1. It can show basic statistics of your WhatsApp chats.\n
-        3. It shows visuals graphs of your personalised chats and provide meaningful insights in the conversaton.\n 
- """)
-expander2 = st.expander("How to use it?")
-expander2.write("""
-        1. Read the prerequisites page present in the sidebar of this app.\n 
-           (If you're using a smartphone, expand the sidebar by clicking on the top-left arrow button.)\n
-        2. Follow the steps present in prerequistes and upload the file in the drag & drop region.
- """)
 
 st.sidebar.title("WhatsApp Chat Analyzer")
 
